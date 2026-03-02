@@ -1,6 +1,4 @@
-readme Samys Buffet Eventos  basico para colocar githab
-README - Samys Buffet Eventos
-Site institucional do Buffet Samys Eventos.
+
 
 📋 Sobre
 Site desenvolvido para apresentar os serviços do buffet, com cardápio, fotos e contato.

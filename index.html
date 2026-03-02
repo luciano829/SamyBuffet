@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samys Buffet Eventos - Início</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0c0c0c;
+        }
+
+        .navbar {
+            background: rgb(243, 241, 241);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo h1 {
+            color: #080808;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-links a.active,
+        .nav-links a:hover {
+            color: #080808;
+            background: #ec3232;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/img.png\ 2.jpeg');
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #f73636;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .about {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .about h2 {
+            text-align: center;
+            color: #0a0a0a;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 2rem;
+            background: #f9f5f0;
+            border-radius: 10px;
+        }
+
+        .feature i {
+            font-size: 3rem;
+            color: #0c0c0c;
+            margin-bottom: 1rem;
+        }
+
+        .social-section {
+            background: linear-gradient(135deg, #0c0c0c, #080808);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-social {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433, #d62976, #962fbf);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        footer {
+            background: #0f0f0f;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-social a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Samys Buffet Eventos </h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Págína Início</a></li>
+                <li><a href="servicos.html">Págína Eventos</a></li>
+                <li><a href="contato.html">Págína Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h2> SEU EVENTO ÍNESQUECÍVEL ❤️</h2>
+                <p>Com uma equipe preparada e com um atendimento diferenciado para tornar seu evento inesquecível ❤️
+                    especial</p>
+                <a href="contato.html" class="btn-primary">Faça seu orçamento</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>Bem-vindo ao Samys Buffet Eventos</h2>
+                <p style="text-align: center;">Há mais de 10 anos proporcionando momentos inesquecíveis com nossa
+                    gastronomia de excelência.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-medal"></i>
+                        <h3>Qualidade</h3>
+                        <p>Ingredientes selecionados</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Variedade</h3>
+                        <p>Diversas opções</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Profissionalismo</h3>
+                        <p>Equipe dedicada</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <h2>Conecte-se com a gente</h2>
+            <p>Siga-nos no Instagram e faça seu pedido pelo WhatsApp</p>
+            <div class="social-buttons">
+                <a href="https://wa.me/5511930700984" class="btn-social btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://instagram.com/samysbuffet" class="btn-social btn-instagram" target="_blank">
+                    <i class="fab fa-instagram"></i> @samysbuffet
+                </a>
+            </div>
+        </section>
+
+        <a href="https://wa.me/55119930700984" class="whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Samys Buffet</h3>
+                <p>Sabores que encantam</p>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>(11)93070-0984 </p>
+                <p>contato@samysbuffet.com.br</p>
+            </div>
+            <div>
+                <h3>Redes Sociais</h3>
+                <div class="footer-social">
+                    <a href="https://instagram.com/samysbuffet"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5511930700984"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 2rem;">&copy; 2024 Samys Buffet</p>
+    </footer>
+</body>
+
+</html>
